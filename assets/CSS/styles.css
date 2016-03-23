@@ -1,0 +1,328 @@
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+   margin: 0px;
+   padding: 0px;
+   background-color: whitesmoke;
+}
+
+.navbar a {
+   text-decoration: none;
+   color: white;
+
+}
+
+.navbar {
+   position: fixed;
+   z-index: 500;
+   margin: auto;
+   width: 100%;
+   top: 0;
+   left: 0;
+   background: #FFA17F; /* fallback for old browsers */
+   background: -webkit-linear-gradient(to left, #FFA17F , #00223E); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to left, #FFA17F , #00223E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   opacity: .8;
+   padding-left: 50px;
+
+
+}
+
+.section {
+   width: 100%;
+}
+
+ul {
+   list-style: none;
+   width: 100%;
+   display: inline-flex;
+   /*flex-direction: row;*/
+   /*justify-content: flex-start;*/
+}
+
+li {
+   line-height: .5;
+   width: 25%;
+   font-family: 'Oswald', sans-serif;
+   font-size: 1.5rem;
+
+}
+
+.main_caption {
+   position: relative;
+   z-index: 10;
+   margin: auto;
+   align-content: center;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 300px;
+   margin-top: 100px;
+   line-height: .5rem;
+}
+
+h1 {
+   font-family: 'Oswald', sans-serif;
+   font-weight: 400;
+   font-size: 3rem;
+   color: gray;
+
+}
+
+h3 {
+   font-weight: 400;
+   color: gray;
+   font-family: 'Open Sans', sans-serif;
+
+}
+
+.longs img {
+   position: relative;
+   z-index: 1;
+   margin-top: -8em;
+   width: 100%;
+}
+
+
+
+
+
+/*gallery page 2*/
+
+.gallery_head,
+.aboutMe_head {
+   font-size: 5rem;
+   z-index: 1;
+   color: #3F51B5;
+   padding-top: 10%;
+   padding-bottom: 10%;
+   text-align: center;
+   font-family: 'Oswald', sans-serif;
+}
+
+
+.wrapper2 {
+   flex: 1 1 auto;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   margin-top: -1%;
+
+   /*margin-top: 4%;*/
+   /*background-color: #0C6FAA;*/
+   /*background-color: #053C5D;*/
+
+
+   background: #616161; /* fallback for old browsers */
+   background: -webkit-linear-gradient(to left, #616161 , #9bc5c3); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to left, #616161 , #9bc5c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+
+.card {
+   /*flex-wrap: wrap;*/
+   display: inline-flex;
+   height: 50%;
+   width: 93%;
+   margin: auto;
+   margin-bottom: 3%;
+   padding: 15px;
+   background-color: #fff;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.card img {
+   /*flex-wrap: wrap;*/
+   height: inherit;
+   width: 50%;
+}
+
+
+.caption {
+   width: 50%;
+   position: relative;
+   padding: 1.75rem;
+   background-color: white;
+   color: black;
+   font-size: 2.5rem;
+   text-align: center;
+   font-family: 'Oswald', sans-serif;
+   transition: all 2s ease;
+}
+
+
+.caption p {
+   padding: 0px;
+   margin: 0px;
+   font-size: 1.25rem;
+   font-family: 'Open Sans', sans-serif;
+
+}
+
+button {
+    background-color: #053C5D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position:relative;
+    bottom: 2px;
+    font-size: 16px;
+}
+
+   /*right arrow*/
+.caption.right:before {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 0;
+   left: -28px;
+   top: 10%;
+   border-top: 30px solid transparent;
+   border-bottom: 30px solid transparent;
+   border-right:30px solid #fff;
+   margin-top: 73px;
+   transition: all 0.5s ease;
+}
+
+   /*left arrow*/
+.caption.left:after {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 0;
+   right: -28px;
+   top: 10%;
+   border-top: 30px solid transparent;
+   border-bottom: 30px solid transparent;
+   border-left: 30px solid #fff;
+   margin-top: 73px;
+   transition: all .75s ease;
+}
+
+
+a {
+   text-decoration: none;
+   color: black
+}
+
+
+.caption:hover {
+   /*background-color: #3F51B5;*/
+   /*background-color: gray;*/
+   background-color: #d3d3d3;
+}
+
+.caption.left:hover:after {
+   border-left-color: #d3d3d3;
+}
+
+.caption.right:hover:before {
+   border-right-color: #d3d3d3;
+
+}
+
+
+/*about me, page 3*/
+.section3 {
+   display:flex;
+   background-image: url("../images/horse.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.wrapper3 {
+   width: 59%;
+}
+
+.love_hate {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   background-color: #fff;
+}
+
+.about_me {
+   /*width: 100%;*/
+   margin-top: 50%;
+   font-size: 2rem;
+   color: gray;
+   opacity: 0.6;
+   background-color: #fff;
+   text-align: center;
+   font-family: 'Open Sans', serif;
+   margin-bottom: 1%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.about_headers {
+   font-family: 'Oswald', sans-serif;
+   font-weight: 400;
+   font-size: 3rem;
+   color: gray;
+   padding: 10px;
+   margin-top: 1%;
+   margin-bottom: 1%;
+}
+
+
+/*.love {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   text-align: right;
+   border-right: 2px solid cyan;
+   padding-right: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.hate {
+   width: 50%;
+   .text-align: left;
+   border-left: 2px solid cyan;
+   padding-left: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about_li {
+   list-style: none;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 1.5rem;
+   color: gray;
+   line-height: 1.25;
+}
+
+.about_ul {
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+   margin-top: 0px;
+}
+
+.languages {
+   width: 100%;
+   margin: auto;
+   text-align: center;
+   background-color: #fff;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.languages img {
+   height: 77px;
+}
+*/
