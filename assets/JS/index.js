@@ -6,8 +6,10 @@ $(document).ready(function() {
          var target = $(this.hash);
          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
          if (target.length) {
+            console.log(target.offset().top)
            $('html, body').animate({
-             scrollTop: target.offset().top
+
+             scrollTop: target.offset().top 
            }, 1000);
            return false;
          }
